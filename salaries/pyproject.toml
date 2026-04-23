@@ -7,7 +7,9 @@ authors = [
     { name = "Felix Kjellberg", email = "felix.l.kjellberg@gmail.com" }
 ]
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "streamlit>=1.56.0",
+]
 
 [project.scripts]
 salaries = "salaries:main"
