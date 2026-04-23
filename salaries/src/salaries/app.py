@@ -1,7 +1,11 @@
 import streamlit as st
 
 pages = [
-    st.Page("page/home.py", title = "Home")
+    st.Page("pages/home.py", title = "Home"),
+    st.Page("pages/raw_data.py", title = "Raw data"),
+    st.Page("pages/dashboard.py", title = "Dashboard"),
 ]
-st.markdown("cool app")
-st.balloons()
+
+pg = st.navigation(pages)
+
+pg.run()
