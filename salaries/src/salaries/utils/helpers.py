@@ -9,3 +9,9 @@ def read_textfile(path):
 @st.cache_data
 def get_salaries_df():
     return pd.read_csv(DATA_PATH / "salaries.csv")
+
+def read_css(path):
+    css = read_textfile(path)
+    st.write(
+        f"<style>{css}</style>", unsafe_allow_html=True
+    )
